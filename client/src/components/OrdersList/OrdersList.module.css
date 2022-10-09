@@ -1,0 +1,585 @@
+.generalContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    height: 7%;
+    width: 70%;
+    box-shadow: 0 0 20px red;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.idContainer {
+    display: flex;
+    height: 90%;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.productsContainer {
+    display: flex;
+    height: 90%;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewButtonContainer {
+    display: flex;
+    height: 90%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.addButtonContainer {
+    display: flex;
+    height: 90%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.id {
+    display: flex;
+    font-size: 20px;
+    color: black;
+}
+
+.products {
+        display: flex;
+        font-size: 20px;
+        color: black;
+}
+
+.viewButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 70%;
+    background-color: red;
+    box-shadow: 0 0 20px red;
+    color: white;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+.viewButton:hover {
+    animation: 1s pump linear infinite;
+}
+
+@keyframes pump {
+    from {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.productsModal {
+    display: flex;
+    position: absolute;
+    height: 50%;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    background-color: rgb(206, 206, 206);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    animation: .35s showUp linear forwards;
+}
+
+.formModal {
+    display: flex;
+    position: absolute;
+    height: 50%;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    background-color: rgb(206, 206, 206);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    animation: .35s showUp linear forwards;
+}
+
+@keyframes showUp {
+    from {
+        transform: translateY(75%) scale(0.5);
+    }
+    to {
+        transform: translateY(0%) scale(1);
+    }
+}
+
+.modalInfoContainer {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.modalColumn {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modalRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.closeButtonContainer {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    height: 8%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    flex-direction: row;
+}
+
+.closeButtonSeparation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.closeButton {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.closeButtonModal {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px black;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    box-shadow: 0 0 40px red;
+}
+
+.hrSub {
+    border: 1px solid black;
+    width: 95%;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    gap: 10px;
+    overflow: auto;
+}
+
+.label {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.addAnotherButtonContainer {
+    display: flex;
+    height: 10%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.addAnotherButton {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: red;
+    border: none;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.addAnotherButton:hover {
+    box-shadow: 0 0 20px red;
+}
+
+.listContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.addOrderBtnContainer {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+
+.addOrderButton {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 25px;
+    -webkit-text-stroke: .5px red;
+    text-shadow: 0 0 10px red;
+    color: white;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 70px;
+    border: 2px solid red;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.701);
+}
+
+.indexer {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skuText {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.quantityText {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.deleteButtonContainer {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 0 0 20px red;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.deleteButton:hover {
+    transform: scale(1.2);
+}
+
+.addOrderModal {
+    display: flex;
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    background-color: rgb(206, 206, 206);
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    animation: .5s modalAppears linear forwards;
+}
+
+@keyframes modalAppears {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.addOrderColumns {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 85%;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+.addOrderButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.orderButtons {
+    display: flex;
+    width: 40%;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    border: none;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.orderButtons:hover{
+    box-shadow: 0 0 30px red;
+}
+
+.addOrderRows {
+    display: flex;
+    flex-direction: row;
+    height: 13%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.idInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 7px;
+}
+
+.addOrderLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.addOrderInputId {
+    display: flex;
+    height: 50%;
+    width: 30%;
+    box-shadow: 0 0 5px red;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 2.5px;
+}
+
+.addOrderInputsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+}
+
+.addOrderInputSku {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    gap: 7px;
+}
+.addOrderInputQuantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    gap: 7px;
+}
+
+.addOrderInput {
+    display: flex;
+    width: 40%;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px red;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 2.5px;
+}
+
+.deleteOrderButtonContainer {
+    display: flex;
+    width: 20%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteOrderButton {
+    display: flex;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.deleteOrderButtonInvisible {
+    display: flex;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: transparent;
+    user-select: none;
+}
+
+.deleteOrderButton:hover {
+    box-shadow: 0 0 5px red;
+}
+
+.addAnotherInputButtonContainer {
+    display: flex;
+    height: 8%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.addAnotherInputButton {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.addAnotherInputButton:hover {
+    box-shadow: 0 0 10px red;
+}
